@@ -1,0 +1,15 @@
+.product-title {
+    font-weight: bold;
+    color: #ffcc66;
+}
+
+.product-actions { 
+    margin-top: .75rem;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.product-actions .btn .btn-add {
+    margin: 1rem;
+}
