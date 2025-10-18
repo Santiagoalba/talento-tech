@@ -4,11 +4,25 @@ import { CartContext } from "./CartContext";
 
 export const useCartContext = () => {
 
-    const { addItem, clearCart, getTotalItems } = useContext(CartContext);
-
-    return {
+    const {
+        cart,
         addItem,
         clearCart,
         getTotalItems,
+        removeFromCart,
+        removeOneFromCart,
+        addOneToCart,
+        total
+    } = useContext(CartContext);
+
+    return {
+        cart,
+        addItem,
+        clearCart,
+        getTotalItems,
+        removeFromCart,
+        addOneToCart,
+        removeOneFromCart,
+        total
     }
 }

@@ -1,3 +1,4 @@
+
 .product-title {
     font-weight: bold;
     color: #ffcc66;
@@ -12,4 +13,13 @@
 
 .product-actions .btn .btn-add {
     margin: 1rem;
+}
+
+.product-image {
+    object-fit: cover;
+    width: 100%;
+}
+
+.image-container {
+    width: 100%;
 }

@@ -22,5 +22,37 @@
         "category": "dulce",
         "description": "Hojaldre 100% manteca, crujiente por fuera  tierno por dentro",
         "imageUrl": "/images/croissant.jpg"
+    },
+    {
+        "id": "4",
+        "name": "Brownies",
+        "price": 1000,
+        "category": "dulce",
+        "description": "Bocaditos de chocolate húmedos y densos, con textura suave y sabor intenso.",
+        "imageUrl": "/images/brownie.jpg"
+    },
+    {
+        "id": "5",
+        "name": "Cheesecake",
+        "price": 1700,
+        "category": "dulce",
+        "description": "Postre cremoso a base de queso y galletas, generalmente con cobertura dulce.",
+        "imageUrl": "/images/cheesecake.jpg"
+    },
+    {
+        "id": "6",
+        "name": "Carrot Cake",
+        "price": 1400,
+        "category": "dulce",
+        "description": "Bizcocho húmedo hecho con zanahoria rallada y especias, a menudo con glaseado de queso crema.",
+        "imageUrl": "/images/carrot-cake.jpg"
+    },
+    {
+        "id": "7",
+        "name": "Cremona",
+        "price": 800,
+        "category": "salado",
+        "description": "Panificado en forma de espiral, hojaldrado y crocante.",
+        "imageUrl": "/images/cremona.webp"
     }
 ]

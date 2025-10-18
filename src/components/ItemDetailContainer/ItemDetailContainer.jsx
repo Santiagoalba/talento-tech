@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react";
 import { ItemDetail } from "../ItemDetail/ItemDetail";
 import { useParams } from "react-router-dom";
+import { Link } from "react-router-dom";
+import './ItemDetailContainer.css';
 
 export const ItemDetailContainer = () => {
 
@@ -18,7 +20,8 @@ export const ItemDetailContainer = () => {
         return res.json();
       })
       .then((data) => {
-        const found = data.find((p) => p.category === category);
+        const found = data.filter((p) => p.category === category);
+        console.log('found',found);
         if (found) {
           setDetail(found);
         } else {
@@ -32,13 +35,16 @@ export const ItemDetailContainer = () => {
 
   }, [category]);
 
+  console.log(detail);
 
   return (
-    <main>
-      {
-        Object.keys(detail).length ? (
-          <ItemDetail detail={detail} />
-        ) : (
+    <main className="category-container items-grid">
+      { 
+        detail.length ? detail.map(item => (
+          <Link className="item" to={`/detail/${item.id}`} key={item.id}>
+            <ItemDetail detail={item} />
+          </Link>
+        )) : (
           <p>Cargando...</p>
         )
       }

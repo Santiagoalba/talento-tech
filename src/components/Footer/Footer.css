@@ -1,0 +1,22 @@
+footer {
+  background-color: #111;
+  color: #f5c16c;
+  padding: 2rem;
+  font-size: 0.9rem;
+  border-top: 1px solid #222;
+  height: 80px;
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+}
+
+.footer-text {
+  grid-column: 2;
+  margin: 0;
+}
+
+.back-to-top {
+  grid-column: 3;
+  justify-self: end;
+  cursor: pointer;
+}
