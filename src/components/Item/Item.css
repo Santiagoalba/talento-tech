@@ -1,7 +1,16 @@
+.product-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 .product-title {
     font-weight: bold;
     color: #ffcc66;
+}
+
+.product-description {
+    width: 90%;
 }
 
 .product-actions { 
@@ -11,6 +20,12 @@
     gap: .5rem;
 }
 
+.info-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .product-actions .btn .btn-add {
     margin: 1rem;
 }
@@ -18,6 +33,10 @@
 .product-image {
     object-fit: cover;
     width: 100%;
+}
+
+.product-price {
+    margin: 0;
 }
 
 .image-container {

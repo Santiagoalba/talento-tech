@@ -6,10 +6,12 @@ export const Item = ({name, price, description, imageUrl, children}) => {
         <div className="image-container">
           <img className="product-image" src={imageUrl} alt={description}/>
         </div>
-        <h2 className="product-title">{name}</h2>
-        <p>Precio: ${price}</p>
-        <p>Descripcion {description}</p>
-        {children}
+        <div className="info-container">
+          <h2 className="product-title">{name}</h2>
+          <p className="product-price">${price}</p>
+          <p className="product-description">{description}</p>
+          {children}
+        </div>
     </article>
   )
 }

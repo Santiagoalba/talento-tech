@@ -28,3 +28,10 @@ ul li a {
     grid-column: 3;
     justify-self: end;
 }
+
+.active {
+    color: rgb(170, 170, 16);
+    font-weight: 700;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}

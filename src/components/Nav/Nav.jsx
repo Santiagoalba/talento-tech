@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import './Nav.css';
 import { useCartContext } from '../../context/CartContext/useCartContext';
 import { ShoppingCart } from 'lucide-react';
@@ -11,10 +11,10 @@ export const Nav = () => {
         <nav>
             <ul>
                 <li>
-                    <Link to={"/category/salado"}>Salado</Link>
+                    <NavLink className={({isActive}) => isActive ? 'active' : ''} to={"/category/salado"}>Salado</NavLink>
                 </li>
                 <li>
-                    <Link to={"/category/dulce"}>Dulce</Link>
+                    <NavLink className={({isActive}) => isActive ? 'active' : ''} to={"/category/dulce"}>Dulce</NavLink>
                 </li>
 
 

@@ -40,7 +40,7 @@ export const Carrito = () => {
                 }
                 <div className="total">
                   <span className="total-price">Total: {total}</span>
-                  <button className="remove-button" onClick={clearCart}>Remove all items</button>
+                  <button className="remove-button" onClick={clearCart}>Vaciar Carrito</button>
                 </div>
               </ul>
 
