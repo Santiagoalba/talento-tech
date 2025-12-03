@@ -16,11 +16,6 @@ export const Nav = () => {
                 <li>
                     <NavLink className={({isActive}) => isActive ? 'active' : ''} to={"/category/dulce"}>Dulce</NavLink>
                 </li>
-                <li>
-                    <NavLink className={({isActive}) => isActive ? 'active' : ''} to={"/admin"}>Admin Login</NavLink>
-                </li>
-
-
             </ul>
             <div className='nav-cart-section'>
                 <Link to={"/carrito"}>
