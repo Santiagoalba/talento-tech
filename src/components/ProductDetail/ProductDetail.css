@@ -5,6 +5,7 @@
 
 .product-detail .product-item {
     flex-direction: row;
+    padding: 0 20px;
 }
 
 .product-detail .image-container {
@@ -77,6 +78,11 @@
     .product-detail .info-container {
         flex: 1 1 100%;
         margin: 30px 0 0 0;
+        width: 100%;
+    }
+
+    .product-title {
+        margin-bottom: 12px;
     }
     
     .product-detail .image-container {

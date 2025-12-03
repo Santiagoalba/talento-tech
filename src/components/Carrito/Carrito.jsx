@@ -9,9 +9,9 @@ export const Carrito = () => {
 
   return (
     <>
-      <h3>Carrito de compras</h3>
 
       <div className="cart">
+        <h3>Carrito de compras</h3>
 
         {
 

@@ -9,3 +9,5 @@ export const ItemDetail = ({detail}) => {
     <Item {...detail} />
   )
 }
+
+export default ItemDetail;

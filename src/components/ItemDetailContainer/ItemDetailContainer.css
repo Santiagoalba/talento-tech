@@ -19,3 +19,11 @@
       justify-content: center;
       min-height: 200px; /* Adjust as needed */
     }
+
+    .loading-grid {
+      width: 100%;
+    }
+
+    .items-grid {
+      padding: 0 20px;
+    }

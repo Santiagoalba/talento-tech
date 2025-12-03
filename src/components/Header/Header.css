@@ -4,6 +4,7 @@ header {
      padding: 0 2rem;
      background-color: #111;
      border-bottom: 1px solid #222;
+     width: 100%;
 }
 
 .logo {

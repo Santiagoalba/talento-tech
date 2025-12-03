@@ -1,24 +1,19 @@
 import { useState, useEffect } from "react";
 import { ItemList } from "../ItemList/ItemList";
 import './ItemListContainer.css';
+import { getProducts } from "../../services/products";
+import { useParams } from "react-router-dom";
 
 export const ItemListContainer = ({ titulo }) => {
 
     const [products, setProducts] = useState([]);
+    const {category} = useParams();
 
     useEffect(() => {
-        fetch("/data/products.json")
-            .then((res) => {
-                if (!res.ok) {
-                    throw new Error("Hubo un problema al buscar products");
-                }
-                return res.json();
-            })
-            .then((data) => {
-                setProducts(data);
-            })
-            .catch((err) => console.log(err))
-    }, []);
+        getProducts(category)
+        .then((data) => setProducts(data))
+        .catch((err) => console.log(err));
+    }, [category]);
 
 
     return (
