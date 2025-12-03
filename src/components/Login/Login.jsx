@@ -2,6 +2,7 @@ import { useState } from "react";
 import { useAuthContext } from "../../context/AuthContext/useAuthContext";
 import { useNavigate } from "react-router-dom";
 import { Navigate } from "react-router-dom";
+import './Login.css';
 
 export const Login = () => {
     const [userForm, setUserForm] = useState({ name: "", password: "" });
@@ -32,28 +33,30 @@ export const Login = () => {
     };
 
     return (
-        <form className="session-form" onSubmit={handleSubmit}>
-            <h2>Iniciar sesión</h2>
-            <div>
-                <label>Usuario:</label>
-                <input 
-                    type="text"
-                    name="name"
-                    value={userForm.name}
-                    onChange={handleChange} 
-                />
-            </div>
-            <div>
-                <label>Contraseña:</label>
-                <input 
-                    type="password"
-                    name="password"
-                    value={userForm.password}
-                    onChange={handleChange} 
-                />
-            </div>
-            <button  type="submit">Iniciar sessión</button>
-        </form>
+        <div className="form-container">
+            <form className="session-form" onSubmit={handleSubmit}>
+                <h2>Iniciar sesión</h2>
+                <div>
+                    <label>Usuario:</label>
+                    <input 
+                        type="text"
+                        name="name"
+                        value={userForm.name}
+                        onChange={handleChange} 
+                    />
+                </div>
+                <div>
+                    <label>Contraseña:</label>
+                    <input 
+                        type="password"
+                        name="password"
+                        value={userForm.password}
+                        onChange={handleChange} 
+                    />
+                </div>
+                <button  type="submit">Iniciar sessión</button>
+            </form>
+        </div>
 
     );
 };
